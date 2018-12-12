@@ -21,12 +21,15 @@ Also, this notebook is special, cause this is my first ene-to-end Machine Learni
 ***
 ### Objective
 - [Goal of the notebook](#objective)
+
 ### Data Quality Check
 - [Simple Inspection of Data](#inspection)
+
 ### Descriptive Statistics
 - [Explore Data](#eda)
 - [Univariate Analysis](#univariateAnalysis)
 - [Bivariate Values](#bivariateAnalysis)
+
 ### Data Preprocessing
 - [Missing Values](#missingValues)
 - [Imputation](#imputation)
@@ -35,6 +38,7 @@ Also, this notebook is special, cause this is my first ene-to-end Machine Learni
 - [Feature Engineering](#newFeatures)
 - [Correlation](#correlation)
 - [Deletion](#deletion)
+
 ### Modelling
 - [Define a cross validation strategy](#cvStrategy)
 - [Base Models](#baseModels)
@@ -53,6 +57,7 @@ Also, this notebook is special, cause this is my first ene-to-end Machine Learni
 - [Feature Importance](#featureImportance)
 - [Averaging Scores](#averageing)
 - [Stacked Generalization](#stacking)
+
 ### Conclusion
 
 <a id = 'objective'></a>
@@ -68,7 +73,6 @@ Also, this notebook is special, cause this is my first ene-to-end Machine Learni
 ```python
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -3759,6 +3763,6 @@ sub.to_csv('../submissions/submission_complex.csv',index=False)
 <a id = 'conclusion'></a>
 # Conclusion
 ***
-In this notebook I successfully did analysis on which features influences the House Prices. I have also come up with few new features that has been used as an input to predictive models.
+In this notebook I did analysis on which features influences the House Prices. I did Feature Engineering to create few interesting features which has pretty high correlation to the House Price.
 <br><br>
-I have trained several Machine Learning base models to predict House Prices. I have also used techniques like Averaging base models and Stacked Generalization, which has given me much better score to my predictions using test data.
+I have trained several Machine Learning base models to predict House Prices. I have further explored and used ensemble techniques like Averaging base models and Stacked Generalization, which has given me much better score to my predictions using test data. The best score I received so far is 0.11777, and I am on the top 16% of the leaderboard.
